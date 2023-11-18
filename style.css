@@ -13,6 +13,7 @@ body {
 
   */
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 #container {
   width: 100%;
@@ -159,4 +160,15 @@ footer {
   --surface-color-hover: rgba(0, 0, 0, 0.2);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
+}
+
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .ligh {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
